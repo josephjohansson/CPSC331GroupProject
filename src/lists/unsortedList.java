@@ -13,6 +13,7 @@ public class unsortedList extends DynamicList {
 		if (size >= elements.length) {
 			increaseCapacity();
 		}
+
 		elements[size] = comp;
 		size++;
 	}

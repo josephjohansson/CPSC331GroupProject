@@ -3,6 +3,7 @@ package lists;
 public class CompanyElement {
 	private int ID;
 	private String symbol;
+	private String name;
 	private float lastSale;
 	private float marketCap;
 	private int ipoYear;
@@ -10,10 +11,11 @@ public class CompanyElement {
 	private String industry;
 	private String summaryQuote;
 
-	public CompanyElement(int newID, String newSymbol, float newLastSale, float newMarketCap, int newIpoYear, String newSector, String newIndustry,
-			String newSummaryQuote) {
+	public CompanyElement(int newID, String newName, String newSymbol, float newLastSale, float newMarketCap, int newIpoYear, String newSector,
+			String newIndustry, String newSummaryQuote) {
 		ID = newID;
 		symbol = newSymbol;
+		name = newName;
 		lastSale = newLastSale;
 		marketCap = newMarketCap;
 		ipoYear = newIpoYear;
