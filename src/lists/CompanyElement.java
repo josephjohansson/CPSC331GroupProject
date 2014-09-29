@@ -55,4 +55,10 @@ public class CompanyElement {
 	public String getSummaryQuote() {
 		return summaryQuote;
 	}
+
+	public String toString() {
+		String output = "ID:" + ID + "symbol:" + symbol + "name:" + name + "lastSale:" + lastSale + "marketCap:" + marketCap + "ipoYear:" + ipoYear
+				+ "sector:" + sector + "industry:" + industry + "summaryQuote:" + summaryQuote;
+		return output;
+	}
 }
