@@ -35,7 +35,7 @@ public class readCompanyList {
 	private String industry;
 	private String summaryQuote;
 
-	unsortedList listToFill;
+	UnsortedList listToFill;
 
 	/**
 	 * This constructs a new readCompanyList with a filename and a unsorted list
@@ -46,7 +46,7 @@ public class readCompanyList {
 	 * @param listOfCompanies
 	 *            the unsortedlist to read the file info into
 	 */
-	public readCompanyList(String newFileName, unsortedList listOfCompanies) {
+	public readCompanyList(String newFileName, UnsortedList listOfCompanies) {
 		fileName = newFileName;
 		listToFill = listOfCompanies;
 	}
@@ -78,7 +78,6 @@ public class readCompanyList {
 		} catch (IOException e) {
 
 		}
-
 	}
 
 	/**
@@ -119,5 +118,6 @@ public class readCompanyList {
 		sector = splitInformation[6];
 		industry = splitInformation[7];
 		summaryQuote = splitInformation[8];
+
 	}
 }
