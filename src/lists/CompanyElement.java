@@ -8,7 +8,7 @@ package lists;
  * @version 1.0
  */
 
-public class CompanyElement {
+public class CompanyElement extends Element {
 	private int ID;
 	private String symbol;
 	private String name;
@@ -60,7 +60,7 @@ public class CompanyElement {
 	 * 
 	 * @return the ID number of the company
 	 */
-	public int getID() {
+	public int getKey() {
 		return ID;
 	}
 
