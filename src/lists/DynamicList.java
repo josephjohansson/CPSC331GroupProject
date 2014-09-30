@@ -47,4 +47,8 @@ public class DynamicList {
 	public CompanyElement[] sort() {
 		return null;
 	}
+
+	public CompanyElement getElement(int key) {
+		return elements[key];
+	}
 }
