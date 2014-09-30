@@ -11,6 +11,6 @@ public class readCompanyListTest {
 		readCompanyList reading = new readCompanyList("src/lists/NASDAQCompanyList.csv", listOfCompanies);
 		reading.readList();
 
-		System.out.println(listOfCompanies.getElement(943));
+		System.out.println(listOfCompanies.getElement(112).getIndustry());
 	}
 }

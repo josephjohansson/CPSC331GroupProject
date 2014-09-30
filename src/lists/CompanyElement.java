@@ -142,4 +142,5 @@ public class CompanyElement extends Element {
 				+ summaryQuote;
 		return output;
 	}
+
 }
