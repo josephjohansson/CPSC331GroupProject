@@ -6,9 +6,11 @@ public class readCompanyListTest {
 
 	@Test
 	public void test() {
-		readCompanyList reading = new readCompanyList("src/lists/NASDAQCompanyList.csv");
-		reading.readList();
-		// fail("Not yet implemented");
-	}
+		unsortedList listOfCompanies = new unsortedList();
 
+		readCompanyList reading = new readCompanyList("src/lists/NASDAQCompanyList.csv", listOfCompanies);
+		reading.readList();
+
+		System.out.println(listOfCompanies.getElement(943));
+	}
 }

@@ -35,6 +35,8 @@ public class readCompanyList {
 	private String industry;
 	private String summaryQuote;
 
+	unsortedList listToFill;
+
 	/**
 	 * This constructs a new readCompanyList with a filename and a unsorted list
 	 * to fill.
@@ -46,7 +48,7 @@ public class readCompanyList {
 	 */
 	public readCompanyList(String newFileName, unsortedList listOfCompanies) {
 		fileName = newFileName;
-		listOfCompanies = new unsortedList();
+		listToFill = listOfCompanies;
 	}
 
 	/**
@@ -55,7 +57,7 @@ public class readCompanyList {
 	 * 
 	 * @param listOfCompanies
 	 */
-	public void readList(unsortedList listOfCompanies) {
+	public void readList() {
 		try {
 			// new file reader
 			br = new BufferedReader(new FileReader(fileName));
@@ -69,7 +71,7 @@ public class readCompanyList {
 
 				CompanyElement elem = new CompanyElement(ID, symbol, name, lastSale, marketCap, ipoYear, sector, industry, summaryQuote);
 
-				listOfCompanies.insert(elem);
+				listToFill.insert(elem);
 			}
 		} catch (FileNotFoundException e) {
 			System.out.println("file not found");
@@ -77,7 +79,6 @@ public class readCompanyList {
 
 		}
 
-		System.out.println(listOfCompanies.getElement(943));
 	}
 
 	/**
