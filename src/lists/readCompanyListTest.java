@@ -6,11 +6,12 @@ public class readCompanyListTest {
 
 	@Test
 	public void test() {
-		unsortedList listOfCompanies = new unsortedList();
+		UnsortedList listOfCompanies = new UnsortedList();
 
 		readCompanyList reading = new readCompanyList("src/lists/NASDAQCompanyList.csv", listOfCompanies);
 		reading.readList();
 
-		System.out.println(listOfCompanies.getElement(112).getIndustry());
+		System.out.println(listOfCompanies.toArray()[0]);
+
 	}
 }

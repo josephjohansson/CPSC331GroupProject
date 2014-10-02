@@ -1,9 +1,5 @@
 package lists;
 
-public class Element {
-	int key;
-	
-	public int getKey (){
-		return key;
-	}
+public abstract class Element {
+	public abstract int getKey();
 }
