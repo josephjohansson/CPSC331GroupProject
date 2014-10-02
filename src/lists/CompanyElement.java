@@ -53,6 +53,7 @@ public class CompanyElement extends Element {
 		sector = newSector;
 		industry = newIndustry;
 		summaryQuote = newSummaryQuote;
+
 	}
 
 	/**
@@ -137,10 +138,10 @@ public class CompanyElement extends Element {
 	 * 
 	 * @return the ID number of the company
 	 */
-	public String toString() {
-		String output = ID + "," + symbol + "," + name + "," + lastSale + "," + marketCap + "," + ipoYear + "," + sector + "," + industry + ","
-				+ summaryQuote;
-		return output;
-	}
+	/*
+	 * public String toString() { String output = ID + "," + symbol + "," + name
+	 * + "," + lastSale + "," + marketCap + "," + ipoYear + "," + sector + "," +
+	 * industry + "," + summaryQuote; return output; }
+	 */
 
 }
